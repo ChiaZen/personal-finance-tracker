@@ -80,6 +80,38 @@
             margin-bottom: 20px;
         }
 
+        .tab-nav {
+            margin-top: 30px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tab-button {
+            background: #e4e8ee;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            color: #333;
+        }
+
+        .tab-button.active {
+            background: #007BFF;
+            color: #fff;
+        }
+
+        .tab-content {
+            display: none;
+            margin-top: 30px;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -128,10 +160,25 @@
 
     </style>
 </head>
+
+    <script>
+    function openTab(tabName) {
+        const tabs = document.querySelectorAll('.tab-content');
+        const buttons = document.querySelectorAll('.tab-button');
+        tabs.forEach(tab => tab.classList.remove('active'));
+        buttons.forEach(btn => btn.classList.remove('active'));
+
+        document.getElementById(tabName).classList.add('active');
+        event.currentTarget.classList.add('active');
+    }
+    </script>
+
+
 <body>
 <div class="container">
     <h2>Welcome, {{ user.username }} 👋</h2>
 
+    <!-- Summary  section -->
     <div class="summary-cards">
         <div class="card">
             <h3>Total Income</h3>
@@ -151,6 +198,15 @@
         </div>
     </div>
 
+    <!-- 🔹 Tabs Navigation -->
+    <nav class="tab-nav">
+        <button class="tab-button active" onclick="openTab('overview')">📊 Overview</button>
+        <button class="tab-button" onclick="openTab('goals')">🎯 Personal Goals</button>
+        <button class="tab-button" onclick="openTab('expenses')">🧾 Detailed Expenses</button>
+        <button class="tab-button" onclick="openTab('menu')">📁 Menu</button>
+    </nav>
+
+    <!-- 🔹 Tab Content Area -->
     <div class="chart-section">
         <div class="chart-row">
             <div class="chart-wrapper">
@@ -162,6 +218,10 @@
                 {{ radar_plot_html|safe }}
             </div>
         </div>
+    </div>
+
+    <div id="goals" class="tab-content">
+        <h3>Goal Tracking (Coming Soon)</h3>
     </div>
 
 
