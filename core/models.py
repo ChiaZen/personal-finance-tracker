@@ -26,3 +26,18 @@ class Transaction(models.Model):
 
     def __str__(self):
         return f"{self.user.username} | {self.type} | {self.amount:.2f} | {self.category}"
+
+
+class Budget(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    category = models.CharField(max_length=50)
+    amount = models.DecimalField(max_digits=10, decimal_places=2)
+    month = models.DateField()  # used to tie it to time
+
+class Goal(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    name = models.CharField(max_length=100)
+    target_amount = models.DecimalField(max_digits=12, decimal_places=2)
+    current_amount = models.DecimalField(max_digits=12, decimal_places=2, default=0)
+    due_date = models.DateField()
+    goal_type = models.CharField(max_length=50, choices=[('savings', 'Savings'), ('investment', 'Investment')])
