@@ -1,0 +1,16 @@
+# Virtual environments
+venv/
+__pycache__/
+*.pyc
+
+# Sensitive config
+.env
+*.duckdb
+
+# IDEs
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
