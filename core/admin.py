@@ -1,8 +1,11 @@
 from django.contrib import admin
-from .models import Transaction
+from .models import Transaction, Budget, Goal
 
 @admin.register(Transaction)
 class TransactionAdmin(admin.ModelAdmin):
     list_display = ('user', 'type', 'category', 'amount', 'date', 'household_type', 'is_recurring')
     list_filter = ('type', 'household_type', 'is_recurring', 'date')
     search_fields = ('user__username', 'category', 'description')
+
+admin.site.register(Budget)
+admin.site.register(Goal)
