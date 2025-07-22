@@ -1,9 +1,0 @@
-user,date,household_type,goal_type,goal_target,goal_current_amount,income_after_tax,budget_expenses,actual_expenses
-alice,15/06/2025,family,savings,5409,4029.33,2321.29,1624.9,1495.72
-alice,15/07/2025,family,savings,5409,4029.33,3564.16,2494.91,2540.06
-bob,15/06/2025,unemployed,savings,6535,2817.78,3201.13,2240.79,2105.82
-bob,15/07/2025,unemployed,savings,6535,2817.78,3303.66,2312.56,2183.26
-charlie,15/06/2025,couple,debt_payoff,18261,15002.88,3907.6,2735.32,2692.99
-charlie,15/07/2025,couple,debt_payoff,18261,15002.88,2388.7,1672.09,1760.21
-diana,15/06/2025,unemployed,savings,11224,4018.53,3823.87,2676.71,2841.13
-diana,15/07/2025,unemployed,savings,11224,4018.53,3539.49,2477.64,2712.08
