@@ -17,7 +17,7 @@ A Django-based web application that helps users **track daily income and expense
 
 <hr>
 
-## 📁 Features
+## Features
 ```mermaid
 kanban
     Backlog
