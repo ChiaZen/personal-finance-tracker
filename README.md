@@ -17,14 +17,36 @@ A Django-based web application that helps users **track daily income and expense
 
 <hr>
 
-## 📁 Features (coming soon)
-- 🧾 Add income, expenses, savings, debt, and investments
-- 📊 View dynamic charts: bar, pie, radar, line
-- 🔄 Upload Excel files with flexible formats
-- 👨‍👩‍👧 Track by household type and compare months
-- 🎯 Set financial goals and track progress
-- 🧪 Fully tested with unit & integration tests
-- 🔄 Track daily expense
+## 📁 Features
+```mermaid
+kanban
+    Backlog
+        📈 Advanced Analytics Dashboard
+        🔔 Budget Alerts & Notifications
+        📱 Mobile App Version
+        🏦 Bank API Integration
+
+    Todo
+        🧾 Add income, expenses, savings, debt, and investments
+        🔄 Upload Excel files with flexible formats
+        🎯 Set financial goals and track progress
+        🧪 Fully tested with unit & integration tests
+        🔄 Track daily expense
+
+    In Progress
+        📊 View dynamic charts: bar, pie, radar, line
+        👨‍👩‍👧 Track by household type and compare months
+        🔄 Financial overview
+
+    Review
+        🔐 User authentication
+
+    Done
+        🗄️ DuckDB integration
+        📁 Project initialisation
+        🏗️ Basic Django setup
+        📋 Database schema design
+```
 
 <hr>
 
