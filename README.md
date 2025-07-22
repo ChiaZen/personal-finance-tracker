@@ -37,6 +37,7 @@ kanban
         📊 View dynamic charts: bar, pie, radar, line
         👨‍👩‍👧 Track by household type and compare months
         🔄 Financial overview
+        🔐 GPG key
 
     Review
         🔐 User authentication
