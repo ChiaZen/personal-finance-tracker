@@ -17,7 +17,7 @@ A Django-based web application that helps users **track daily income and expense
 
 <hr>
 
-## 📁 Features
+## 📁 Features (coming soon)
 - 🧾 Add income, expenses, savings, debt, and investments
 - 📊 View dynamic charts: bar, pie, radar, line
 - 🔄 Upload Excel files with flexible formats
@@ -40,7 +40,7 @@ A Django-based web application that helps users **track daily income and expense
 | Auth           | Django Built-in Authentication       |
 | Deployment     | Local + CLI Workflow                 |
 | Testing        | Pytest, Django Test Framework        |
-| 🗃 Version Control| Git & GitHub                      |
+| Version Control| Git & GitHub                      |
 
 <hr>
 ## 📁 Directory
