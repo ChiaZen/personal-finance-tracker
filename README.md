@@ -15,6 +15,16 @@ A Django-based web application that helps users **track daily income and expense
 5. Enable Excel uploads for batch tracking.
 6. Assist users with financial goals.
 
+<hr>
+
+## 📁 Features
+- 🧾 Add income, expenses, savings, debt, and investments
+- 📊 View dynamic charts: bar, pie, radar, line
+- 🔄 Upload Excel files with flexible formats
+- 👨‍👩‍👧 Track by household type and compare months
+- 🎯 Set financial goals and track progress
+- 🧪 Fully tested with unit & integration tests
+- 🔄 Track daily expense
 
 <hr>
 
@@ -31,17 +41,6 @@ A Django-based web application that helps users **track daily income and expense
 | Deployment     | Local + CLI Workflow                 |
 | Testing        | Pytest, Django Test Framework        |
 | 🗃 Version Control| Git & GitHub                      |
-
-<hr>
-
-## 📁 Features
-- 🧾 Add income, expenses, savings, debt, and investments
-- 📊 View dynamic charts: bar, pie, radar, line
-- 🔄 Upload Excel files with flexible formats
-- 👨‍👩‍👧 Track by household type and compare months
-- 🎯 Set financial goals and track progress
-- 🧪 Fully tested with unit & integration tests
-- 🔄 Track daily expense
 
 <hr>
 ## 📁 Directory
