@@ -182,19 +182,19 @@
     <div class="summary-cards">
         <div class="card">
             <h3>Total Income</h3>
-            <p>${{ summary.income|default:0 }}</p>
+            <p>DKK{{ summary.income|default:0 }}</p>
         </div>
         <div class="card">
             <h3>Total Expenses</h3>
-            <p>${{ summary.expense|default:0 }}</p>
+            <p>DKK{{ summary.expense|default:0 }}</p>
         </div>
         <div class="card">
             <h3>Total Savings</h3>
-            <p>${{ summary.saving|default:0 }}</p>
+            <p>DKK{{ summary.saving|default:0 }}</p>
         </div>
         <div class="card">
             <h3>Total Investments</h3>
-            <p>${{ summary.investment|default:0 }}</p>
+            <p>DKK{{ summary.investment|default:0 }}</p>
         </div>
     </div>
 
@@ -203,7 +203,7 @@
         <button class="tab-button active" onclick="openTab('overview')">📊 Overview</button>
         <button class="tab-button" onclick="openTab('goals')">🎯 Personal Goals</button>
         <button class="tab-button" onclick="openTab('expenses')">🧾 Detailed Expenses</button>
-        <button class="tab-button" onclick="openTab('menu')">📁 Menu</button>
+        <button class="tab-button" onclick="openTab('loan/debt')"> 💳 Loan/Debt</button>
     </nav>
 
     <!-- 🔹 Tab Content Area -->
@@ -219,16 +219,25 @@
             </div>
         </div>
     </div>
-
-    <div id="goals" class="tab-content">
-        <h3>Goal Tracking (Coming Soon)</h3>
+    <div class="chart-section">
+            <div class="chart-wrapper">
+                <h3>📊 Overview Monthly Budget vs Actual Expenses by Category </h3>
+                <div class="tab-content active" id="overview">
+                    {{ budget_vs_actual_html|safe }}
+                </div>
+    
+    <div class="chart-section">
+        <div class="chart-wrapper">
+            <div id="goals" class="tab-content">
+            <h3>Goal Tracking (Coming Soon)</h3>
+        </div>
     </div>
 
 
     <div class="chart-section">
         <div class="chart-wrapper">
-            <h3>📉 Investment Trends</h3>
-            {{ investment_chart_html|safe }}
+            <h3>📉 Budget Variance by Expenses</h3>
+            {{ variance_chart|safe }}
         </div>
     </div>
 
