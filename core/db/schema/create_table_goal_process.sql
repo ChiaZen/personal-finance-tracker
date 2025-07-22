@@ -5,6 +5,8 @@ TABLE goal_progress {
   goal_target DECIMAL(12,2) NOT NULL,
   current_amount DECIMAL(12,2) NOT NULL,
   date DATE NOT NULL,
+  month INTEGER NOT NULL,
+  year INTEGER NOT NULL,
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (user_id) REFERENCES users(id),
