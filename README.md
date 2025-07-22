@@ -18,7 +18,7 @@ A Django-based web application that helps users **track daily income and expense
 
 <hr>
 
-### Tech stacks
+## Tech stacks
 
 | Category         | Tools / Libraries                    |
 |------------------|--------------------------------------|
@@ -32,6 +32,7 @@ A Django-based web application that helps users **track daily income and expense
 | Testing        | Pytest, Django Test Framework        |
 | 🗃 Version Control| Git & GitHub                      |
 
+<hr>
 
 ## 📁 Features
 - 🧾 Add income, expenses, savings, debt, and investments
@@ -42,6 +43,8 @@ A Django-based web application that helps users **track daily income and expense
 - 🧪 Fully tested with unit & integration tests
 - 🔄 Track daily expense
 
+<hr>
+## 📁 Directory
 
 ```bash
 finance-app/
