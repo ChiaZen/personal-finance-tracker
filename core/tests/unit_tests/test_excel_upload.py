@@ -42,7 +42,6 @@ def test_upload_excel_missing_columns(client):
         'type': 'expense',
         'amount': 1000,
         'date': '2025-07-01',
-        # 'category' missing!
     }])
     excel_buffer = BytesIO()
     df.to_excel(excel_buffer, index=False)
