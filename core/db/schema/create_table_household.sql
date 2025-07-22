@@ -1,0 +1,4 @@
+CREATE TABLE household (
+  id INTEGER PRIMARY KEY,
+  type VARCHAR UNIQUE
+);

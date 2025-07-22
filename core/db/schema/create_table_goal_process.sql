@@ -1,0 +1,12 @@
+TABLE goal_progress {
+  id INTEGER PRIMARY KEY,
+  user_id INTEGER NOT NULL,
+  goal_id INTEGER NOT NULL,
+  goal_target DECIMAL(12,2) NOT NULL,
+  current_amount DECIMAL(12,2) NOT NULL,
+  date DATE NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id),
+  FOREIGN KEY (goal_id) REFERENCES goal(id)
+};

@@ -1,0 +1,4 @@
+CREATE TABLE goal (
+  id INTEGER PRIMARY KEY,
+  type VARCHAR UNIQUE
+);
